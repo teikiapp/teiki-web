@@ -28,7 +28,7 @@ export class SubmitService {
       `Anything else: ${v.notes || '—'}`,
     ].join('\n');
 
-    const mailto = `mailto:feedback@teiki.app?subject=${encodeURIComponent('Submit a Service')}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:capydev.sys@outlook.com?subject=${encodeURIComponent('Submit a Service')}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
     this.submitted = true;
   }
