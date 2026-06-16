@@ -706,10 +706,8 @@ h1 {
     justify-content: center;
   }
 
-  .content section,
-  .page-main,
-  .content {
-    width: calc(100vw - 50px);
-    max-width: calc(100vw - 50px);
+  .page-main {
+    width: 100%;
+    max-width: 100%;
   }
 }
