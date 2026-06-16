@@ -1,0 +1,67 @@
+<main class="page-main">
+  <div class="page-title">
+    <p class="eyebrow">Submit a Service</p>
+    <h1>Suggest a service for Teiki's catalog.</h1>
+    <p>Fill in what you know — only the service name is required. We'll handle the rest.</p>
+  </div>
+
+  <form class="service-form" [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-row">
+      <label class="form-label" for="name">
+        Service name <span class="required">*</span>
+      </label>
+      <input
+        class="form-input"
+        id="name"
+        type="text"
+        placeholder="e.g. Netflix, Spotify, Google One"
+        formControlName="name"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="form-row">
+      <label class="form-label" for="website">Website</label>
+      <input
+        class="form-input"
+        id="website"
+        type="url"
+        placeholder="https://example.com"
+        formControlName="website"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="form-row">
+      <label class="form-label" for="region">Country or region</label>
+      <input
+        class="form-input"
+        id="region"
+        type="text"
+        placeholder="e.g. Philippines, US, Global"
+        formControlName="region"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="form-row">
+      <label class="form-label" for="notes">Anything else</label>
+      <textarea
+        class="form-input form-textarea"
+        id="notes"
+        placeholder="Logo color, icon description, common plan names, or anything helpful…"
+        formControlName="notes"
+        rows="4"
+      ></textarea>
+    </div>
+
+    <div class="form-footer">
+      <button class="button" type="submit" [disabled]="form.invalid">Send Request</button>
+      <p class="form-hint">Opens your email app with the details pre-filled.</p>
+    </div>
+  </form>
+
+  @if (submitted) {
+    <p class="form-success">Your email app should have opened. Thanks for the suggestion!</p>
+  }
+</main>
