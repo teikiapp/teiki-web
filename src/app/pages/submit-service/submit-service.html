@@ -6,6 +6,18 @@
   </div>
 
   <form class="service-form" [formGroup]="form" (ngSubmit)="submit()">
+    <!-- Honeypot: hidden from humans, bots fill it in and get rejected. -->
+    <div class="hp-field" aria-hidden="true">
+      <label for="company">Company</label>
+      <input
+        id="company"
+        type="text"
+        formControlName="_gotcha"
+        tabindex="-1"
+        autocomplete="off"
+      />
+    </div>
+
     <div class="form-row">
       <label class="form-label" for="name">
         Service name <span class="required">*</span>
@@ -77,6 +89,9 @@
 
   @if (state === 'success') {
     <p class="form-success">Thanks for the suggestion! We've received your request.</p>
+  }
+  @if (state === 'cooldown') {
+    <p class="form-error">Thanks! You've recently sent a suggestion — you can submit another in about {{ cooldownMinutes }} minute{{ cooldownMinutes === 1 ? '' : 's' }}.</p>
   }
   @if (state === 'error') {
     <p class="form-error">Something went wrong sending your request. Please try again, or email us at <a href="mailto:capydev.sys@outlook.com">capydev.sys&#64;outlook.com</a>.</p>
