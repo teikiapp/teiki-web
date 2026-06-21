@@ -38,9 +38,21 @@
         class="form-input"
         id="region"
         type="text"
-        placeholder="e.g. Philippines, US, Global"
+        placeholder="e.g. US, Global"
         formControlName="region"
         autocomplete="off"
+      />
+    </div>
+
+    <div class="form-row">
+      <label class="form-label" for="email">Your email <span class="optional">(optional)</span></label>
+      <input
+        class="form-input"
+        id="email"
+        type="email"
+        placeholder="So we can follow up if needed"
+        formControlName="email"
+        autocomplete="email"
       />
     </div>
 
@@ -56,12 +68,17 @@
     </div>
 
     <div class="form-footer">
-      <button class="button" type="submit" [disabled]="form.invalid">Send Request</button>
-      <p class="form-hint">Opens your email app with the details pre-filled.</p>
+      <button class="button" type="submit" [disabled]="form.invalid || state === 'sending'">
+        {{ state === 'sending' ? 'Sending…' : 'Send Request' }}
+      </button>
+      <p class="form-hint">Sent straight to our team — no email app required.</p>
     </div>
   </form>
 
-  @if (submitted) {
-    <p class="form-success">Your email app should have opened. Thanks for the suggestion!</p>
+  @if (state === 'success') {
+    <p class="form-success">Thanks for the suggestion! We've received your request.</p>
+  }
+  @if (state === 'error') {
+    <p class="form-error">Something went wrong sending your request. Please try again, or email us at <a href="mailto:capydev.sys@outlook.com">capydev.sys&#64;outlook.com</a>.</p>
   }
 </main>

@@ -574,6 +574,22 @@ h1 {
   font-weight: 600;
 }
 
+.form-error {
+  margin-top: 20px;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #dc2626;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.optional {
+  color: var(--muted);
+  font-weight: 400;
+}
+
 @media (max-width: 540px) {
   .form-cols {
     grid-template-columns: 1fr;
