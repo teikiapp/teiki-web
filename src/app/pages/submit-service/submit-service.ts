@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Seo } from '../../services/seo';
 
 // Formspree endpoint. Create a form at https://formspree.io and paste its
 // form ID here (the part after /f/ in the endpoint URL).
@@ -33,6 +34,15 @@ export class SubmitService {
     // any submission where _gotcha is non-empty.
     _gotcha: [''],
   });
+
+  constructor() {
+    inject(Seo).update({
+      title: 'Submit a Service | Teiki',
+      description:
+        'Suggest a subscription or bill service for Teiki to support. Send us the name, website, and region and we will consider adding it.',
+      path: 'submit-a-service',
+    });
+  }
 
   async submit() {
     if (this.form.invalid || this.state === 'sending') return;
