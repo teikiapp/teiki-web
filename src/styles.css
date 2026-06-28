@@ -165,6 +165,7 @@ h1, h2, h3, p {
 
 .hero-phone {
   width: min(26vw, 290px);
+  height: auto;
   min-width: 180px;
   border-radius: 36px;
   box-shadow: var(--shadow-lg);
@@ -185,6 +186,7 @@ h1, h2, h3, p {
 
 .logo-wordmark {
   width: min(220px, 52vw);
+  height: auto;
   margin-bottom: 28px;
 }
 
@@ -620,7 +622,7 @@ h1 {
   justify-content: center;
   gap: 18px;
   padding: 28px var(--gutter);
-  color: var(--faint);
+  color: var(--muted);
   border-top: 1px solid var(--line);
   font-size: 0.85rem;
   letter-spacing: -0.01em;
