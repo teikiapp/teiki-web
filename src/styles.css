@@ -376,6 +376,13 @@ h1 {
   margin: 0;
 }
 
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
 .cta-button {
   display: inline-flex;
   align-items: center;
