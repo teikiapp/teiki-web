@@ -726,12 +726,17 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .feature {
+    align-items: center;
+    text-align: center;
+  }
+
   .carousel-nav {
     display: none;
   }
 
   .carousel-track {
-    --per-view: 1.15;
+    --per-view: 2;
   }
 
   .form-cols {
