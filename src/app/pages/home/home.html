@@ -1,20 +1,39 @@
 <main>
   <section class="hero">
-    <div class="hero-media" aria-hidden="true">
-      <img class="hero-phone" src="screenshots/homepage.png" alt="App screenshot — light" width="1206" height="2622" />
-      <img class="hero-phone secondary" src="screenshots/subscriptions.png" alt="App screenshot — dark" width="1206" height="2622" />
-    </div>
     <div class="hero-copy">
-      <img class="logo-wordmark" src="logo/teiki-logo-dark.png" alt="Teiki" width="1200" height="500" />
-      <p class="eyebrow">Bills &amp; subscriptions tracker</p>
-      <h1>Know what is due before it is due.</h1>
+      <p class="eyebrow">Bills &amp; Subscription Tracker</p>
+      <h1>Know what's <mark>due</mark> before it's due.</h1>
       <p class="lead">Teiki keeps recurring payments, bill reminders, payment history, and subscription totals in one calm place.</p>
-      <div class="actions">
-        <a class="button" routerLink="/support">Get Support</a>
-        <a class="button secondary" routerLink="/submit-a-service">Submit a Service</a>
+      <div class="store-badges">
+        <a class="store-badge" href="https://apps.apple.com/app/id6780547178" target="_blank" rel="noopener" aria-label="Download Teiki on the App Store">
+          <img src="badges/app-store.svg" alt="Download on the App Store" width="142" height="48" />
+        </a>
+        <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.capydev.teiki" target="_blank" rel="noopener" aria-label="Get Teiki on Google Play">
+          <img src="badges/google-play.svg" alt="Get it on Google Play" width="167" height="48" />
+        </a>
       </div>
     </div>
   </section>
+
+  <div class="showcase-wrap">
+    <div class="carousel">
+      <button type="button" class="carousel-nav prev" (click)="track.scrollBy({ left: -track.clientWidth * 0.8, behavior: 'smooth' })" aria-label="Previous screenshots">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div #track class="carousel-track">
+        <img class="promo-shot" src="screenshots/app-store/App Store 1.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 2.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 3.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 4.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 5.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 6.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 7.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+      </div>
+      <button type="button" class="carousel-nav next" (click)="track.scrollBy({ left: track.clientWidth * 0.8, behavior: 'smooth' })" aria-label="Next screenshots">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
 
   <section class="section">
     <div class="section-head">
@@ -23,40 +42,60 @@
     </div>
     <div class="feature-grid">
       <article class="feature">
-        <div class="feature-mark" style="background: var(--red);"></div>
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </span>
         <h3>Due dates</h3>
         <p>See overdue, upcoming, and paid subscriptions without digging through receipts.</p>
       </article>
       <article class="feature">
-        <div class="feature-mark" style="background: var(--blue);"></div>
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        </span>
         <h3>Reminders</h3>
         <p>Use local notifications to get reminded before bills and subscriptions renew.</p>
       </article>
       <article class="feature">
-        <div class="feature-mark" style="background: var(--green);"></div>
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path d="M12 7v5l4 2"/></svg>
+        </span>
         <h3>History</h3>
         <p>Mark payments as paid and keep a lightweight history of recurring charges.</p>
       </article>
       <article class="feature">
-        <div class="feature-mark" style="background: var(--accent);"></div>
-        <h3>Privacy</h3>
-        <p>Your subscription list is designed around local-first tracking, with optional iCloud Sync planned for Apple devices.</p>
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </span>
+        <h3>Monthly totals</h3>
+        <p>See how much your subscriptions cost each month so nothing slips by unnoticed.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </span>
+        <h3>Local-first privacy</h3>
+        <p>Your subscription list lives on your device, with optional iCloud Sync planned for Apple devices.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </span>
+        <h3>No account</h3>
+        <p>No sign-up, no clutter. Open the app and start tracking your bills right away.</p>
       </article>
     </div>
   </section>
 
-  <section class="section alt cta-section">
+  <section class="section cta-section">
     <div class="cta-block">
       <h2>Your subscriptions,<br>always in sight.</h2>
       <p>No account. No clutter. Just your bills, on time.</p>
-      <div class="cta-buttons">
-        <a class="button cta-button" href="https://apps.apple.com/app/id6780547178" target="_blank" rel="noopener">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          Download on the App Store
+      <div class="store-badges">
+        <a class="store-badge" href="https://apps.apple.com/app/id6780547178" target="_blank" rel="noopener" aria-label="Download Teiki on the App Store">
+          <img src="badges/app-store.svg" alt="Download on the App Store" width="142" height="48" loading="lazy" />
         </a>
-        <a class="button secondary cta-button" href="https://play.google.com/store/apps/details?id=com.capydev.teiki" target="_blank" rel="noopener">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.4a1 1 0 0 0-.6.92v17.36a1 1 0 0 0 .6.92l9.92-9.6L3.6 2.4zm11.34 7.78L5.5 1.18l11.86 6.84-2.42 2.16zm0 3.64 2.42 2.16L5.5 22.82l9.44-9zm1.5-1.33 3.16-1.82a1 1 0 0 0 0-1.74l-3.16-1.82-2.6 2.69 2.6 2.69z"/></svg>
-          Get it on Google Play
+        <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.capydev.teiki" target="_blank" rel="noopener" aria-label="Get Teiki on Google Play">
+          <img src="badges/google-play.svg" alt="Get it on Google Play" width="167" height="48" loading="lazy" />
         </a>
       </div>
       <p class="cta-note">Free to download &middot; Available on iPhone, iPad &amp; Android</p>
