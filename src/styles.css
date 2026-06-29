@@ -208,13 +208,13 @@ h1 {
 .store-badge {
   display: inline-flex;
   border-radius: 12px;
-  border: 1px solid var(--line-strong);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   transition: transform 0.12s, border-color 0.15s;
 }
 
 .store-badge:hover {
   transform: translateY(-2px);
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.9);
 }
 
 .store-badge img {
