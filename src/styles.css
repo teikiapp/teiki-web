@@ -290,7 +290,7 @@ h1 {
   flex: 0 0 calc((100% - (var(--per-view) - 1) * var(--gap)) / var(--per-view));
   width: calc((100% - (var(--per-view) - 1) * var(--gap)) / var(--per-view));
   height: auto;
-  border-radius: 22px;
+  border-radius: 10px;
   border: 1px solid var(--line);
   box-shadow: var(--shadow-lg);
   scroll-snap-align: start;
@@ -378,33 +378,43 @@ h1 {
 /* ── Feature grid (3-col icon list) ── */
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(20px, 3vw, 40px) clamp(28px, 4vw, 56px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(30px, 4vw, 44px) clamp(40px, 6vw, 88px);
 }
 
+/* Icon in the left column centered against the title; description sits in the
+   right column on the second row, indented under the title. */
 .feature {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
+  row-gap: 8px;
+  align-items: center;
 }
 
 .feature-icon {
+  grid-column: 1;
+  grid-row: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 11px;
-  background: var(--accent-dim);
+  width: 1.7em;
+  height: 1.7em;
+  font-size: 1.05rem;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 1px solid var(--line);
   color: var(--accent);
 }
 
 .feature-icon svg {
-  width: 20px;
-  height: 20px;
+  width: 1em;
+  height: 1em;
 }
 
 .feature h3 {
+  grid-column: 2;
+  grid-row: 1;
   font-size: 1.05rem;
   font-weight: 700;
   margin: 0;
@@ -413,6 +423,8 @@ h1 {
 }
 
 .feature p {
+  grid-column: 2;
+  grid-row: 2;
   color: var(--muted);
   margin: 0;
   font-size: 0.92rem;
@@ -444,12 +456,6 @@ h1 {
 .cta-block > p {
   color: var(--muted);
   font-size: 1.05rem;
-  margin: 0;
-}
-
-.cta-note {
-  font-size: 0.82rem;
-  color: var(--faint);
   margin: 0;
 }
 
@@ -724,11 +730,6 @@ h1 {
 
   .feature-grid {
     grid-template-columns: 1fr;
-  }
-
-  .feature {
-    align-items: center;
-    text-align: center;
   }
 
   .carousel-nav {
