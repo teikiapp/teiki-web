@@ -16,19 +16,20 @@
   </section>
 
   <div class="showcase-wrap">
-    <div class="carousel" (mouseenter)="stopAuto()" (mouseleave)="startAuto()" (touchstart)="stopAuto()" (focusin)="stopAuto()">
-      <button type="button" class="carousel-nav prev" (click)="scrollCarousel(track, -1)" aria-label="Previous screenshots">
+    <div class="carousel">
+      <button type="button" class="carousel-nav prev" (click)="track.scrollBy({ left: -track.clientWidth * 0.8, behavior: 'smooth' })" aria-label="Previous screenshots">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
       </button>
-      <div #track class="carousel-track" (scroll)="onCarouselScroll(track)">
-        @for (n of shots; track n) {
-          <img class="promo-shot" src="screenshots/app-store/App Store {{ n }}.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
-        }
-        @for (n of shots; track n) {
-          <img class="promo-shot" src="screenshots/app-store/App Store {{ n }}.png" alt="" aria-hidden="true" width="1284" height="2778" loading="lazy" />
-        }
+      <div #track class="carousel-track">
+        <img class="promo-shot" src="screenshots/app-store/App Store 1.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 2.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 3.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 4.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 5.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 6.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
+        <img class="promo-shot" src="screenshots/app-store/App Store 7.png" alt="Teiki app preview" width="1284" height="2778" loading="lazy" />
       </div>
-      <button type="button" class="carousel-nav next" (click)="scrollCarousel(track, 1)" aria-label="Next screenshots">
+      <button type="button" class="carousel-nav next" (click)="track.scrollBy({ left: track.clientWidth * 0.8, behavior: 'smooth' })" aria-label="Next screenshots">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
       </button>
     </div>
