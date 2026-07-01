@@ -66,30 +66,26 @@ h1, h2, h3, p {
 
 mark {
   position: relative;
+  display: inline-block;
+  line-height: 0.98;
   color: var(--ink);
   background: transparent;
   white-space: nowrap;
-  padding: 0 0.08em;
+  padding: 0 0.02em;
 }
 
-/* Highlighter-marker stroke that sweeps upward, curving from the bottom-left
-   to the top-right behind the text — uneven rounded ends like a real marker. */
 mark::before {
   content: "";
   position: absolute;
   z-index: -1;
-  left: -0.14em;
-  right: -0.14em;
-  top: 10%;
-  bottom: 2%;
-  background: linear-gradient(
-    100deg,
-    rgba(74, 222, 128, 0.55) 0%,
-    rgba(74, 222, 128, 0.95) 55%,
-    rgba(74, 222, 128, 0.75) 100%
-  );
-  border-radius: 62% 38% 60% 40% / 75% 65% 35% 25%;
-  transform: rotate(-3.5deg) skewX(-7deg);
+  left: -0.07em;
+  right: -0.09em;
+  bottom: 0.06em;
+  height: 0.75em;
+  background: #16a34a;
+  border-radius: 0.025em;
+  /* transform: rotate(-3deg);
+  transform-origin: left center; */
 }
 
 /* ── Header ── */
