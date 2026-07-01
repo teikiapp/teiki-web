@@ -14,6 +14,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/support/support').then(m => m.Support),
   },
   {
+    path: 'release-notes',
+    loadComponent: () => import('./pages/release-notes/release-notes').then(m => m.ReleaseNotes),
+  },
+  {
     path: 'submit-a-service',
     loadComponent: () => import('./pages/submit-service/submit-service').then(m => m.SubmitService),
   },
