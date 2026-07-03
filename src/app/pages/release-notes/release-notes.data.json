@@ -1,0 +1,55 @@
+[
+  {
+    "version": "1.2.0",
+    "title": "Calendar accuracy and everyday tracking",
+    "blocks": [
+      { "type": "paragraph", "text": "This update improves Calendar accuracy and everyday tracking." },
+      {
+        "type": "list",
+        "items": [
+          "Bills due on the 30th or 31st now appear on the correct dates.",
+          "You can now view History and Details from past and upcoming Calendar months.",
+          "Other fixes and improvements."
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.0",
+    "title": "Settings, Calendar, and Subscription Tracking refinements",
+    "blocks": [
+      { "type": "paragraph", "text": "This update improves stability and refines the experience in Settings, Calendar, and Subscription Tracking." },
+      {
+        "type": "list",
+        "items": [
+          "Redesigned the Calendar into a dedicated page.",
+          "You can now add a subscription from the Calendar starting on the day you picked.",
+          "Refreshed the Filter, Sort, and Settings screens."
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.0.0",
+    "title": "Initial release",
+    "blocks": [
+      { "type": "paragraph", "text": "Teiki helps you track recurring bills, subscriptions, and payment reminders in one clean place." },
+      { "type": "paragraph", "text": "Add upcoming bills, organize subscriptions with tags, review monthly totals, and get reminded before payments are due. Teiki makes it easier to see what renews next, how much you are spending, and which recurring payments need attention." },
+      { "type": "heading", "text": "Features" },
+      {
+        "type": "list",
+        "items": [
+          "Track bills and subscriptions",
+          "View upcoming payment reminders",
+          "Organize subscriptions with tags",
+          "Review monthly totals",
+          "Customize subscription cards",
+          "Use privacy lock for extra protection",
+          "Sync with iCloud on supported devices"
+        ]
+      },
+      { "type": "paragraph", "text": "Designed for simple, private subscription tracking without clutter.", "className": "release-note-closing" },
+      { "type": "paragraph", "text": "Teiki comes from the Japanese word for regular or periodic." }
+    ]
+  }
+]

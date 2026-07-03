@@ -608,18 +608,6 @@ h1 {
   box-shadow: 0 0 0 6px var(--bg);
 }
 
-.release-note:nth-child(1) {
-  --release-color: #4ade80;
-}
-
-.release-note:nth-child(2) {
-  --release-color: #60a5fa;
-}
-
-.release-note:nth-child(3) {
-  --release-color: #facc15;
-}
-
 .release-note:last-child {
   padding-bottom: 0;
   border-left-color: transparent;

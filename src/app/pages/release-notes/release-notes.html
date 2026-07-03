@@ -6,45 +6,29 @@
   </div>
 
   <div class="release-timeline">
-    <section class="release-note">
-      <p class="release-version">Version 1.2.0</p>
-      <h2>Calendar accuracy and everyday tracking</h2>
-      <p>This update improves Calendar accuracy and everyday tracking.</p>
-      <ul>
-        <li>Bills due on the 30th or 31st now appear on the correct dates.</li>
-        <li>You can now view History and Details from past and upcoming Calendar months.</li>
-        <li>Other fixes and improvements.</li>
-      </ul>
-    </section>
+    @for (release of releases; track release.version; let i = $index) {
+      <section class="release-note" [style.--release-color]="dotColor(i)">
+        <p class="release-version">Version {{ release.version }}</p>
+        <h2>{{ release.title }}</h2>
 
-    <section class="release-note">
-      <p class="release-version">Version 1.1.0</p>
-      <h2>Settings, Calendar, and Subscription Tracking refinements</h2>
-      <p>This update improves stability and refines the experience in Settings, Calendar, and Subscription Tracking.</p>
-      <ul>
-        <li>Redesigned the Calendar into a dedicated page.</li>
-        <li>You can now add a subscription from the Calendar starting on the day you picked.</li>
-        <li>Refreshed the Filter, Sort, and Settings screens.</li>
-      </ul>
-    </section>
-
-    <section class="release-note">
-      <p class="release-version">Version 1.0.0</p>
-      <h2>Initial release</h2>
-      <p>Teiki helps you track recurring bills, subscriptions, and payment reminders in one clean place.</p>
-      <p>Add upcoming bills, organize subscriptions with tags, review monthly totals, and get reminded before payments are due. Teiki makes it easier to see what renews next, how much you are spending, and which recurring payments need attention.</p>
-      <h3>Features</h3>
-      <ul>
-        <li>Track bills and subscriptions</li>
-        <li>View upcoming payment reminders</li>
-        <li>Organize subscriptions with tags</li>
-        <li>Review monthly totals</li>
-        <li>Customize subscription cards</li>
-        <li>Use privacy lock for extra protection</li>
-        <li>Sync with iCloud on supported devices</li>
-      </ul>
-      <p class="release-note-closing">Designed for simple, private subscription tracking without clutter.</p>
-      <p>Teiki comes from the Japanese word for regular or periodic.</p>
-    </section>
+        @for (block of release.blocks; track $index) {
+          @switch (block.type) {
+            @case ('paragraph') {
+              <p [class]="block.className ?? ''">{{ block.text }}</p>
+            }
+            @case ('heading') {
+              <h3>{{ block.text }}</h3>
+            }
+            @case ('list') {
+              <ul>
+                @for (item of block.items; track $index) {
+                  <li>{{ item }}</li>
+                }
+              </ul>
+            }
+          }
+        }
+      </section>
+    }
   </div>
 </main>
