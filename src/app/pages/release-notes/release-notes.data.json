@@ -1,5 +1,21 @@
 [
   {
+    "version": "1.3.0",
+    "title": "Clearer due dates and payment status",
+    "blocks": [
+      { "type": "paragraph", "text": "This update makes due dates and payment status easier to read at a glance." },
+      {
+        "type": "list",
+        "items": [
+          "Your subscription list now shows how soon each bill is due, like \"in 2 weeks\" or \"in 1 month\".",
+          "Paid status is clearer and shows exactly which billing cycle each payment covers.",
+          "Marking bills due on the 30th or 31st as paid now advances to the correct cycle.",
+          "Other fixes and improvements."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.2.0",
     "title": "Calendar accuracy and everyday tracking",
     "blocks": [
