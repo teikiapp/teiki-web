@@ -7,7 +7,7 @@
       {
         "type": "list",
         "items": [
-          "Your subscription list now shows how soon each bill is due, like \"in 2 weeks\" or \"in 1 month\".",
+          "Your subscription list now shows how soon each bill is due, like \"2 weeks\" or \"1 month\".",
           "Paid status is clearer and shows exactly which billing cycle each payment covers.",
           "Marking bills due on the 30th or 31st as paid now advances to the correct cycle.",
           "Other fixes and improvements."
