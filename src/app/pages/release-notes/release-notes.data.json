@@ -1,5 +1,20 @@
 [
   {
+    "version": "1.5.0",
+    "title": "Now in more languages",
+    "blocks": [
+      { "type": "paragraph", "text": "Teiki now speaks your language, with smarter defaults when you first open the app." },
+      {
+        "type": "list",
+        "items": [
+          "Now available in French, German, and Spanish.",
+          "Starts in your phone's language and currency automatically.",
+          "Other fixes and improvements."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.4.0",
     "title": "Hide amounts and more services",
     "blocks": [
