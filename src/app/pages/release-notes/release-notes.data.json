@@ -3,7 +3,7 @@
     "version": "1.5.0",
     "title": "Now in more languages",
     "blocks": [
-      { "type": "paragraph", "text": "Teiki now speaks your language, with smarter defaults when you first open the app." },
+      { "type": "paragraph", "text": "Teiki now speaks your language." },
       {
         "type": "list",
         "items": [
