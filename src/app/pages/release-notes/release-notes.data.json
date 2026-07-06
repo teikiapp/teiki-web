@@ -1,15 +1,18 @@
 [
   {
     "version": "1.5.0",
-    "title": "Now in more languages",
+    "title": "Seven languages and smarter tracking",
     "blocks": [
-      { "type": "paragraph", "text": "Teiki now speaks your language." },
+      { "type": "paragraph", "text": "This update brings Teiki to more languages and makes everyday tracking easier to keep accurate." },
       {
         "type": "list",
         "items": [
-          "Now available in French, German, and Spanish.",
-          "Added popular local services for France, Germany, and Spain.",
+          "Now available in French, German, Spanish, Italian, Portuguese (Brazil), Japanese, and Korean.",
+          "Teiki now picks a supported language and currency from your phone on first launch.",
+          "Added common local services for France, Germany, and Spain.",
           "Can't find a service? Request it or add it as a custom one right from search.",
+          "You can now record a past payment if you forgot to mark it paid at the time.",
+          "Paid subscriptions now show the next due date, and weekly or bi-weekly bills track their cycle more reliably.",
           "Tile and Split card styles are now free for everyone.",
           "Other fixes and improvements."
         ]
