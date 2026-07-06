@@ -328,8 +328,8 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 46px;
-  height: 46px;
+  width: 28px;
+  height: 28px;
   padding: 0;
   border-radius: var(--radius-pill);
   background: var(--bg-surface);
@@ -350,8 +350,8 @@ h1 {
 }
 
 .carousel-nav svg {
-  width: 20px;
-  height: 20px;
+  width: 13px;
+  height: 13px;
 }
 
 .carousel-nav.prev {
