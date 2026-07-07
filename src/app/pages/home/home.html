@@ -22,10 +22,10 @@
       </button>
       <div #track class="carousel-track" (scroll)="onCarouselScroll(track)">
         @for (n of shots; track n) {
-          <img class="promo-shot" src="screenshots/en/listing/EN{{ n }}.png" alt="Teiki app preview" width="584" height="1264" loading="lazy" />
+          <img class="promo-shot" src="screenshots/listing/EN{{ n }}.png" alt="Teiki app preview" width="584" height="1264" loading="lazy" />
         }
         @for (n of shots; track n) {
-          <img class="promo-shot" src="screenshots/en/listing/EN{{ n }}.png" alt="" aria-hidden="true" width="584" height="1264" loading="lazy" />
+          <img class="promo-shot" src="screenshots/listing/EN{{ n }}.png" alt="" aria-hidden="true" width="584" height="1264" loading="lazy" />
         }
       </div>
       <button type="button" class="carousel-nav next" (click)="scrollCarousel(track, 1)" aria-label="Next screenshots">
