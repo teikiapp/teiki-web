@@ -1,5 +1,20 @@
 [
   {
+    "version": "1.6.0",
+    "title": "More languages and cleaner customization",
+    "blocks": [
+      { "type": "paragraph", "text": "This update brings Teiki to even more languages and refines how you customize your subscriptions." },
+      {
+        "type": "list",
+        "items": [
+          "Now available in 20 languages, adding Indonesian, Dutch, Polish, Romanian, Turkish, Vietnamese, Russian, Hindi, Portuguese (Portugal), and Chinese (Simplified and Traditional).",
+          "A cleaner, tighter color palette when customizing a subscription.",
+          "Other fixes and improvements."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.5.0",
     "title": "Seven languages and smarter tracking",
     "blocks": [
