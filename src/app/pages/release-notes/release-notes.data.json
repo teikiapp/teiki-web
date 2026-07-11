@@ -1,13 +1,14 @@
 [
   {
     "version": "1.7.0",
-    "title": "Friendlier reminders and more services",
+    "title": "Friendlier reminders and a refreshed Settings screen",
     "blocks": [
-      { "type": "paragraph", "text": "This update makes bill reminders feel more personable and adds more services to track." },
+      { "type": "paragraph", "text": "This update makes bill reminders feel more personable and gives Settings a cleaner look." },
       {
         "type": "list",
         "items": [
           "Bill reminders now use friendlier, more varied messages with an emoji cue.",
+          "A refreshed Settings screen with colored icon tiles and clearer grouping.",
           "Added three new services to the catalog by user request.",
           "Other fixes and improvements."
         ]
