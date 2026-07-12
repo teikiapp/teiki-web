@@ -1,5 +1,20 @@
 [
   {
+    "version": "1.7.1",
+    "title": "Settings refinements and more services",
+    "blocks": [
+      { "type": "paragraph", "text": "This update refines the Settings screen and adds more services to track." },
+      {
+        "type": "list",
+        "items": [
+          "More Settings polish, refined icon tiles and grouping.",
+          "Added another three services to the catalog by user request.",
+          "Other fixes and improvements."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.7.0",
     "title": "Friendlier reminders and a refreshed Settings screen",
     "blocks": [
