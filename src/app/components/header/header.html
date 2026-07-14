@@ -1,6 +1,9 @@
 <header class="site-header">
   <a class="brand" routerLink="/" aria-label="Teiki home">
-    <img class="brand-logo" src="logo/small-wordmark-white.png" alt="Teiki" />
+    <picture>
+      <source media="(max-width: 540px)" srcset="apple-touch-icon.png" />
+      <img class="brand-logo" src="logo/small-wordmark-white.png" alt="Teiki" />
+    </picture>
   </a>
   <nav class="nav" aria-label="Main navigation">
     <a routerLink="/release-notes" routerLinkActive="active">Release Notes</a>
