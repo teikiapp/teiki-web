@@ -1,5 +1,20 @@
 [
   {
+    "version": "1.8.0",
+    "title": "Dark mode now available and a refined app icon",
+    "blocks": [
+      { "type": "paragraph", "text": "This update makes dark mode available and gives Teiki a refined app icon." },
+      {
+        "type": "list",
+        "items": [
+          "Dark mode is now available, choose a light, dark, or system theme.",
+          "A refined app icon and a more consistent look across the app.",
+          "Other fixes and improvements."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.7.1",
     "title": "Settings refinements and more services",
     "blocks": [
