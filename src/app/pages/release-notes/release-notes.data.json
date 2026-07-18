@@ -1,5 +1,21 @@
 [
   {
+    "version": "1.9.0",
+    "title": "A fresh app icon and gentle overdue reminders",
+    "blocks": [
+      { "type": "paragraph", "text": "This update brings a redesigned app icon and gentle overdue reminders." },
+      {
+        "type": "list",
+        "items": [
+          "A redesigned app icon and logo, three stacked cards in Teiki's red, yellow, and green.",
+          "If a bill is still unpaid a few days after it is due, Teiki now sends one gentle reminder, just once.",
+          "A gentle vibration when you mark a bill as paid.",
+          "Other fixes and improvements."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.8.0",
     "title": "Dark mode now available",
     "blocks": [
