@@ -1,9 +1,11 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild, inject } from '@angular/core';
 import { Seo } from '../../services/seo';
+import { Reveal } from '../../directives/reveal';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.html',
+  imports: [Reveal],
 })
 export class Home implements AfterViewInit, OnDestroy {
   readonly shots = [1, 2, 3, 4, 5, 6, 7];

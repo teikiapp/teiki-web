@@ -1,10 +1,10 @@
 <main>
   <section class="hero">
     <div class="hero-copy">
-      <p class="eyebrow">Bills &amp; Subscription Tracker</p>
-      <h1>Know what's <mark>due</mark> before it's due.</h1>
-      <p class="lead">Teiki keeps recurring payments, bill reminders, payment history, and subscription totals in one calm place.</p>
-      <div class="store-badges">
+      <p class="eyebrow" reveal>Bills &amp; Subscription Tracker</p>
+      <h1 [reveal]="80">Know what's <mark>due</mark> before it's due.</h1>
+      <p class="lead" [reveal]="160">Teiki keeps recurring payments, bill reminders, payment history, and subscription totals in one calm place.</p>
+      <div class="store-badges" [reveal]="240">
         <a class="store-badge" href="https://apps.apple.com/app/id6780547178" target="_blank" rel="noopener" aria-label="Download Teiki on the App Store">
           <img src="badges/app-store.svg" alt="Download on the App Store" width="142" height="48" />
         </a>
@@ -15,7 +15,7 @@
     </div>
   </section>
 
-  <div class="showcase-wrap">
+  <div class="showcase-wrap" reveal>
     <div class="carousel" (mouseenter)="stopAuto()" (mouseleave)="startAuto()" (touchstart)="stopAuto()" (focusin)="stopAuto()">
       <button type="button" class="carousel-nav prev" (click)="scrollCarousel(track, -1)" aria-label="Previous screenshots">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
@@ -42,47 +42,47 @@
   </div>
 
   <section class="section">
-    <div class="section-head">
+    <div class="section-head" reveal>
       <h2>Built for the small payments that quietly add up.</h2>
       <p>Track what is active, what is overdue, what is coming next, and how much remains this month.</p>
     </div>
     <div class="feature-grid">
-      <article class="feature">
+      <article class="feature" reveal>
         <span class="feature-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
         </span>
         <h3>Due dates</h3>
         <p>See overdue, upcoming, and paid subscriptions without digging through receipts.</p>
       </article>
-      <article class="feature">
+      <article class="feature" [reveal]="70">
         <span class="feature-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
         </span>
         <h3>Reminders</h3>
         <p>Use local notifications to get reminded before bills and subscriptions renew.</p>
       </article>
-      <article class="feature">
+      <article class="feature" [reveal]="140">
         <span class="feature-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path d="M12 7v5l4 2"/></svg>
         </span>
         <h3>History</h3>
         <p>Mark payments as paid and keep a lightweight history of recurring charges.</p>
       </article>
-      <article class="feature">
+      <article class="feature" reveal>
         <span class="feature-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         </span>
         <h3>Monthly totals</h3>
         <p>See how much your subscriptions cost each month so nothing slips by unnoticed.</p>
       </article>
-      <article class="feature">
+      <article class="feature" [reveal]="70">
         <span class="feature-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </span>
         <h3>Local-first privacy</h3>
         <p>Your subscription list lives on your device, with optional iCloud Sync planned for Apple devices.</p>
       </article>
-      <article class="feature">
+      <article class="feature" [reveal]="140">
         <span class="feature-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
         </span>
@@ -93,7 +93,7 @@
   </section>
 
   <section class="section cta-section">
-    <div class="cta-block">
+    <div class="cta-block" reveal>
       <h2>Your subscriptions,<br>always in sight.</h2>
       <p>No account. No clutter. Just your bills, on time.</p>
       <div class="store-badges">
