@@ -90,71 +90,71 @@ mark::before {
 
 /* ── Header ── */
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
   padding: 0 var(--gutter);
-  height: 60px;
-  background: rgba(0, 0, 0, 0.72);
-  backdrop-filter: saturate(140%) blur(12px);
-  border-bottom: 1px solid var(--line);
+  height: 104px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   text-decoration: none;
 }
 
 .brand-logo {
-  height: 34px;
+  height: 56px;
   width: auto;
+  border-radius: 14px;
 }
 
 .brand-name {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
   color: var(--ink);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
+}
+
+.brand-i {
+  color: #16a34a;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: clamp(2px, 2vw, 6px);
-  font-size: 0.9rem;
-  font-weight: 500;
+  gap: 20px;
 }
 
-.nav a {
-  text-decoration: none;
-  color: var(--muted);
-  padding: 7px 14px;
-  border-radius: var(--radius-pill);
-  transition: color 0.15s, background 0.15s;
-  letter-spacing: -0.01em;
-}
-
-.nav a:hover {
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--ink);
-  background: rgba(255, 255, 255, 0.07);
+  transition: color 0.15s, opacity 0.15s;
 }
 
-.nav a.active {
-  color: var(--ink);
-  background: rgba(255, 255, 255, 0.1);
-  font-weight: 600;
+.nav-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.nav-icon:hover {
+  opacity: 0.7;
+}
+
+.nav-icon.active {
+  color: var(--accent);
 }
 
 /* ── Hero ── */
 .hero {
   text-align: center;
-  padding: clamp(56px, 9vw, 110px) var(--gutter) clamp(40px, 6vw, 70px);
+  padding: clamp(24px, 4vw, 48px) var(--gutter) clamp(40px, 6vw, 70px);
 }
 
 .hero-copy {
@@ -163,7 +163,7 @@ mark::before {
 }
 
 .eyebrow {
-  color: var(--accent);
+  color: #43c774;
   font-weight: 600;
   margin: 0 0 18px;
   text-transform: none;
@@ -874,19 +874,19 @@ h1 {
 @media (max-width: 540px) {
   .site-header {
     gap: 12px;
+    height: 84px;
   }
 
   .brand-name {
     display: none;
   }
 
-  .nav {
-    min-width: 0;
-    font-size: 0.84rem;
+  .brand-logo {
+    height: 46px;
   }
 
-  .nav a {
-    padding: 7px 12px;
+  .nav {
+    gap: 16px;
   }
 
   .feature-grid {
