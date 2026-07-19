@@ -4,7 +4,10 @@ import { Meta, Title } from '@angular/platform-browser';
 /** Canonical origin Google should index. Keep in sync with sitemap.xml / robots.txt. */
 export const SITE_URL = 'https://teikiapp.github.io/teiki-web';
 const SITE_NAME = 'Teiki';
-const DEFAULT_IMAGE = `${SITE_URL}/screenshots/homepage.png`;
+const DEFAULT_IMAGE = `${SITE_URL}/thumbnail.png`;
+const DEFAULT_IMAGE_WIDTH = '1200';
+const DEFAULT_IMAGE_HEIGHT = '630';
+const DEFAULT_IMAGE_ALT = 'Track bills. Plan subscriptions. Teiki showing tracked bills and a grid of subscription services';
 
 export interface SeoData {
   /** Full <title> text. */
@@ -39,11 +42,17 @@ export class Seo {
     this.meta.updateTag({ property: 'og:type', content: 'website' });
     this.meta.updateTag({ property: 'og:site_name', content: SITE_NAME });
     this.meta.updateTag({ property: 'og:image', content: DEFAULT_IMAGE });
+    // Dimensions let scrapers (WhatsApp, Slack, iMessage) lay out the card
+    // before the image finishes downloading, so the preview renders first try.
+    this.meta.updateTag({ property: 'og:image:width', content: DEFAULT_IMAGE_WIDTH });
+    this.meta.updateTag({ property: 'og:image:height', content: DEFAULT_IMAGE_HEIGHT });
+    this.meta.updateTag({ property: 'og:image:alt', content: DEFAULT_IMAGE_ALT });
 
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
     this.meta.updateTag({ name: 'twitter:title', content: title });
     this.meta.updateTag({ name: 'twitter:description', content: description });
     this.meta.updateTag({ name: 'twitter:image', content: DEFAULT_IMAGE });
+    this.meta.updateTag({ name: 'twitter:image:alt', content: DEFAULT_IMAGE_ALT });
   }
 
   private setCanonical(url: string): void {
