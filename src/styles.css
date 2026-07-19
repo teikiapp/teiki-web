@@ -870,7 +870,7 @@ h1 {
   padding: 30px var(--gutter);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 24px;
   color: var(--faint);
   font-size: 0.85rem;
@@ -1018,7 +1018,8 @@ h1 {
   }
 
   .site-footer {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
     gap: 10px;
   }
 }
