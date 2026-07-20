@@ -1,5 +1,20 @@
 [
   {
+    "version": "1.10.0",
+    "title": "Touch feedback across Teiki",
+    "blocks": [
+      { "type": "paragraph", "text": "This update adds touch feedback across Teiki." },
+      {
+        "type": "list",
+        "items": [
+          "Teiki now responds with touch feedback in more places across the app.",
+          "A new Touch Feedback setting lets you keep the default tactile feel or turn it off.",
+          "Other fixes and improvements."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.9.0",
     "title": "A fresh app icon and gentle overdue reminders",
     "blocks": [
@@ -173,8 +188,7 @@
           "Sync with iCloud on supported devices"
         ]
       },
-      { "type": "paragraph", "text": "Designed for simple, private subscription tracking without clutter.", "className": "release-note-closing" },
-      { "type": "paragraph", "text": "Teiki comes from the Japanese word for regular or periodic." }
+      { "type": "paragraph", "text": "Designed for simple, private subscription tracking without clutter.", "className": "release-note-closing" }
     ]
   }
 ]
