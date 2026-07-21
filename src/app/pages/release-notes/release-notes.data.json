@@ -1,5 +1,18 @@
 [
   {
+    "version": "1.10.1",
+    "title": "Calendar icon display fix",
+    "blocks": [
+      { "type": "paragraph", "text": "This update fixes a Calendar display issue." },
+      {
+        "type": "list",
+        "items": [
+          "Fixed a Calendar display issue where some days with multiple bills could show duplicate or overlapping icons after opening or closing the day details."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.10.0",
     "title": "Touch feedback across Teiki",
     "blocks": [
