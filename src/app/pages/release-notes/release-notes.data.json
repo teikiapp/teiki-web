@@ -1,13 +1,15 @@
 [
   {
     "version": "1.10.1",
-    "title": "Calendar icon display fix",
+    "title": "Calendar and reminder fixes",
     "blocks": [
-      { "type": "paragraph", "text": "This update fixes a Calendar display issue." },
+      { "type": "paragraph", "text": "This update fixes Calendar and reminder display issues." },
       {
         "type": "list",
         "items": [
-          "Fixed a Calendar display issue where some days with multiple bills could show duplicate or overlapping icons after opening or closing the day details."
+          "Fixed a Calendar display issue where some days with multiple bills could show duplicate or overlapping icons after opening or closing the day details.",
+          "Cleared old delivered reminders once after the logo refresh, so notification center entries do not keep showing stale branding.",
+          "Other fixes and improvements."
         ]
       }
     ]
