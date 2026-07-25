@@ -1,5 +1,21 @@
 [
   {
+    "version": "1.11.0",
+    "title": "Cleaner Settings and clearer Calendar dates",
+    "blocks": [
+      { "type": "paragraph", "text": "This update makes Settings easier to navigate and Calendar easier to read." },
+      {
+        "type": "list",
+        "items": [
+          "Settings and Help & About now open from one top-right menu on Home and Calendar.",
+          "Teiki now reopens to the last view you used, Home or Calendar, on that device.",
+          "Calendar highlights today and the selected day more clearly.",
+          "Other fixes and improvements."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.10.1",
     "title": "Calendar and reminder fixes",
     "blocks": [
