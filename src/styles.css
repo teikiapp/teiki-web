@@ -587,7 +587,7 @@ h1 {
   padding-left: 22px;
 }
 
-/* ── Release notes ── */
+/* ── Product pages ── */
 .product-page {
   max-width: 1040px;
   padding-bottom: clamp(32px, 4vw, 48px);
@@ -598,12 +598,6 @@ h1 {
   margin-bottom: clamp(30px, 5vw, 48px);
 }
 
-.release-page .product-hero {
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .product-hero h1 {
   font-size: clamp(1.9rem, 3.6vw, 2.8rem);
   line-height: 1.1;
@@ -612,76 +606,12 @@ h1 {
   margin: 0 0 16px;
 }
 
-.release-page .product-hero h1 {
-  max-width: 720px;
-}
-
 .product-hero p:last-child {
   color: var(--muted);
   font-size: 1.08rem;
   letter-spacing: -0.01em;
   max-width: 620px;
   margin: 0;
-}
-
-.release-timeline {
-  display: grid;
-  gap: 0;
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.release-note {
-  position: relative;
-  padding: 0 0 30px 34px;
-  border-left: 1px solid var(--line-strong);
-}
-
-.release-note::before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: 4px;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--release-color, var(--accent));
-  box-shadow: 0 0 0 6px var(--bg);
-}
-
-.release-note:last-child {
-  padding-bottom: 0;
-  border-left-color: transparent;
-}
-
-.release-version {
-  color: var(--accent);
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
-}
-
-.release-note h2 {
-  font-size: clamp(1.25rem, 2.4vw, 1.65rem);
-  line-height: 1.15;
-  letter-spacing: -0.025em;
-  margin: 0 0 10px;
-}
-
-.release-note p,
-.release-note li {
-  color: var(--muted);
-  font-size: 0.94rem;
-}
-
-.release-note ul {
-  margin: 12px 0 0;
-  padding-left: 20px;
-}
-
-.release-note-closing {
-  margin-top: 18px;
 }
 
 .submit-page {
@@ -806,6 +736,17 @@ h1 {
   padding: 12px 14px;
   resize: vertical;
   min-height: 100px;
+}
+
+.form-privacy {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.form-privacy a {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .form-footer {
@@ -974,46 +915,6 @@ h1 {
 
   .product-hero p:last-child {
     font-size: 1rem;
-    line-height: 1.55;
-  }
-
-  .release-note {
-    padding: 0 0 34px;
-    border-left: 0;
-  }
-
-  .release-note::before {
-    display: none;
-  }
-
-  .release-note:not(:last-child) {
-    border-bottom: 1px solid var(--line);
-    margin-bottom: 28px;
-  }
-
-  .release-version {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 10px;
-  }
-
-  .release-version::before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--release-color, var(--accent));
-  }
-
-  .release-note h2 {
-    font-size: 1.28rem;
-    line-height: 1.22;
-  }
-
-  .release-note p,
-  .release-note li {
-    font-size: 0.93rem;
     line-height: 1.55;
   }
 

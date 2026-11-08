@@ -80,6 +80,8 @@
         ></textarea>
       </div>
 
+      <p class="form-privacy">Suggestions are sent through Formspree. Your email is optional and is used only if we need to follow up. See our <a routerLink="/privacy">Privacy Policy</a>.</p>
+
       <div class="form-footer">
         <button class="button" type="submit" [disabled]="form.invalid || state === 'sending'">
           {{ state === 'sending' ? 'Sending...' : 'Send Request' }}

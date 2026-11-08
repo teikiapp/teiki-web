@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { Seo } from '../../services/seo';
 
 // Formspree endpoint. Create a form at https://formspree.io and paste its
@@ -15,7 +16,7 @@ type SubmitState = 'idle' | 'sending' | 'success' | 'error' | 'cooldown';
 
 @Component({
   selector: 'app-submit-service',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './submit-service.html',
 })
 export class SubmitService {

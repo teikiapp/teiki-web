@@ -20,7 +20,7 @@ export class Home implements AfterViewInit, OnDestroy {
     inject(Seo).update({
       title: 'Teiki | Bills & Subscriptions Tracker',
       description:
-        'Teiki keeps recurring payments, bill reminders, payment history, and subscription totals organized and easy to check. Free on iPhone, iPad & Android.',
+        'Teiki keeps recurring payments, bill reminders, payment history, and subscription totals organized and easy to check. Free to download on iPhone and Android.',
       path: '',
     });
   }
