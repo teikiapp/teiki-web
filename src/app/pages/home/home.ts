@@ -8,6 +8,7 @@ import { Reveal } from '../../directives/reveal';
   imports: [Reveal],
 })
 export class Home implements AfterViewInit, OnDestroy {
+  readonly showFullHomepage = false;
   readonly shots = [1, 2, 3, 4, 5, 6, 7];
 
   @ViewChild('track') private trackRef?: ElementRef<HTMLElement>;
@@ -35,7 +36,7 @@ export class Home implements AfterViewInit, OnDestroy {
   }
 
   startAuto(): void {
-    if (this.autoTimer) return;
+    if (!this.showFullHomepage || this.autoTimer) return;
     if (typeof window === 'undefined') return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
